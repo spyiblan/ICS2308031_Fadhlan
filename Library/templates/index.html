@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+</head>
+<body>
+    <h1>WELCOME TO DJANGO VARIABLE</h1>
+    {% with firstname="Muhammad Lan" %}
+        <h1>Hello {{  firstname }}, how are you?</h1>
+    {% endwith %}
+
+    {% if greeting == 1  %}
+    <h1>Welcome To Selection</h1>
+{% endif %}
+
+
+
+    <h2>DISPLAY USING VARIABLE</h2>
+    <button><a href ="{% url 'view' %}">View</a></button>
+    <button><a href ="{% url 'database' %}">Database</a></button>
+    <button><a href ="{% url 'course' %}">Course</a></button>
+    <button><a href ="{% url 'newmentor' %}">newmentor</a></button>
+    <button><a href ="{% url 'search_course' %}">search course</a></button>
+</body>
+</html>

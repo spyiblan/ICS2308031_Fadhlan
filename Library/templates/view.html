@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Hello {{  firstname  }}, how are you?</h1>
+
+    {% if greeting == 1  %}
+        <h1>Welcome To Selection</h1>
+    {% endif %}
+
+
+
+    <p>In views.py you can see how to create  the variable.</p>
+    <p>In template.html you can see how to user variable</p>
+    <button><a href ="{% url 'index' %}">Home</a></button>
+    <button><a href ="{% url 'database' %}">database</a></button>
+</body>
+</html>
